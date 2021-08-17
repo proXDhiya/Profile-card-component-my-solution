@@ -1,0 +1,18 @@
+@media only screen and (max-width: 375px) {
+    body { font-size: 0.9rem; }
+
+    .screen {
+        background-size: 600px;
+        background-position: 150px 400px;
+    }
+
+    .profile-box {
+        width: 360px;
+        height: 400px;
+    }
+
+    .profile-av {
+        top: 85px;
+        right: 120px;
+    }    
+}

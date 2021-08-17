@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --Primary-1: hsl(185, 75%, 39%);
+    --Primary-2: hsl(229, 23%, 23%);
+    --Primary-3: hsl(227, 10%, 46%);
+
+    --Neutral-1: hsl(0, 0%, 59%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--Primary-3);
+}
+
+.screen {
+    background-color: var(--Primary-1);
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: -500px -600px, calc(100% + 500px) calc(100% + 600px);
+    background-size: 1100px, 1100px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.profile-box {
+    background-color: #fff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 420px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.profile-bg {
+    width: 100%;
+}
+
+.profile-av {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 100px;
+    right: 140px;
+    border: 5px solid white;
+}
+
+.profile-name {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.profile-name h3 {
+    color: var(--Primary-2);
+    padding-bottom: 15px;
+}
+
+.profile-name h3 span {
+    padding-left: 10px;
+    color: var(--Primary-3);
+    font-weight: 100;
+}
+
+.social-media-info {
+    display: grid;
+    width: 80%;
+    margin: 30px auto 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    border-top: 2px solid rgb(214, 214, 214);
+}
+
+.followers,
+.likes,
+.photos {
+    align-self: center;
+    text-align: center;
+}
+
+.followers h3,
+.likes h3,
+.photos h3 {
+    color: var(--Primary-2);
+}
+
+.followers p,
+.likes p,
+.photos p {
+    padding-top: 10px;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.attribution {
+    font-size: 0.6rem;
+    text-align: center;
+    position: absolute;
+    transform: translate(50%, -50%);
+    bottom: 0;
+    right: 50%;
+    color: black;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+}
